@@ -1,0 +1,39 @@
+{
+	"name": "User",
+	"router": [{
+		"name": "Basic",
+		"src": "router.js"
+	}, {
+		"name": "Auth",
+		"src": "auth.js"
+	}],
+	"dependencies": {
+		"passport-odnoklassniki": "*",
+		"passport-google-oauth": "*",
+		"passport-vkontakte": "*",
+		"passport-instagram": "*",
+		"passport-facebook": "*",
+		"express-recaptcha": "*",
+		"passport-twitter": "*",
+		"passport-local": "*",
+		"bcrypt-nodejs": "*",
+		"mongoose": "*",
+		"async": "*"
+	},
+	"crud": {
+		"get": [],
+		"updatesAll": [{
+			"keys": ["position","address","country","region","phone","city","name","lang","loc","loc","bio","pre","ptags", "perHour","photos","stickers","icons"],
+			"name": ""
+		},{
+			"keys": ["architect"],
+			"name": "super"
+		}],
+		"updates": [],
+		"unique_field": [{
+			"key": "url",
+			"name": "url"
+		}],
+		"deletes": []
+	}
+}
